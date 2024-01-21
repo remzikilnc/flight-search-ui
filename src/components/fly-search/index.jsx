@@ -102,7 +102,7 @@ const FlySearch = (props) => {
 
     return (
         <form onSubmit={formik.handleSubmit} className="flex gap-y-8 flex-col">
-            <div className="flex gap-x-2 sm:gap-x-12 items-center z-10">
+            <div className="flex gap-x-2 sm:gap-x-12 items-center z-20">
                 <div className="flex flex-col items-center p-2 rounded-md backdrop-blur-sm">
                     <FormElementLabel htmlFor="flightTakeOffAirport" Icon={<MdFlightTakeoff className="text-white/70 h-5 w-5"/>} className="mr-8">Nereden</FormElementLabel>
                     <AutoCompleteInput name="flightTakeOffAirport" id="flightTakeOffAirport" data={airports} setSelected={setTakeOffAirport} selected={takeOffAirport}/>

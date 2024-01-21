@@ -70,7 +70,7 @@ const AutoCompleteInput = ({data, name, id, setSelected, selected}) => {
                             ) : (
                                 airports.map((item) => (
                                     <Combobox.Option key={item.id}
-                                                     className={({active}) => `relative cursor-default select-none p-2 ${active ? 'bg-purple-600 text-white text-xs' : 'text-gray-900'}`}
+                                                     className={({active}) => `relative cursor-default select-none p-2 ${active ? 'bg-cyan-600 text-white text-xs' : 'text-gray-900'}`}
                                                      value={item}>
                                         {({selected, active}) => (
                                             <>

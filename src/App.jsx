@@ -47,7 +47,7 @@ function App() {
                                 ) : loading ? (
                                     <FlyListLoadingSkeleton/>
                                 ) : !loading && results.length === 0 && searchPerformed ? (
-                                    <FlyListErrorNotFound/>
+                                    <FlyListErrorNotFound text="Seçtiğiniz havalimanları arasında varış için şu an bir uçuş mevcut değil. Lütfen bir süre sonra veya farklı bir gün seçerek tekrar deneyiniz."/>
                                 ) : null}
                             </>
                             {isRoundTrip && (
@@ -62,7 +62,7 @@ function App() {
                                         ) : roundTripLoading ? (
                                             <FlyListLoadingSkeleton/>
                                         ) : !roundTripLoading && roundTripResults.length === 0 && searchPerformed ? (
-                                            <FlyListErrorNotFound/>
+                                            <FlyListErrorNotFound text="Seçtiğiniz havalimanları arasında dönüş için şu an bir uçuş mevcut değil. Lütfen bir süre sonra veya farklı bir gün seçerek tekrar deneyiniz."/>
                                         ) : null}
                                     </>
                                 </Fragment>
